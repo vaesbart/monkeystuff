@@ -1,0 +1,10 @@
+# netbeans specific
+/.nb-gradle/
+
+# Gradle spec ignore
+/.gradle
+/gradle/wrapper/
+gradlew*
+
+# output folder
+build/
