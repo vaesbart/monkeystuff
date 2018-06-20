@@ -1,1 +1,17 @@
 apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://dl.bintray.com/jmonkeyengine/org.jmonkeyengine/'
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'org.jmonkeyengine:jme3-core:3.2.1-stable'
+    compile 'org.jmonkeyengine:jme3-desktop:3.2.1-stable'
+    compile 'org.jmonkeyengine:jme3-lwjgl:3.2.1-stable'
+    compile files('./jme3-testdata.jar')
+    //    compile 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
+}
